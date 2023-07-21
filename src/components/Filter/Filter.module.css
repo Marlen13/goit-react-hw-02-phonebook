@@ -1,0 +1,12 @@
+.filter_label {
+
+    display: block;
+    cursor: pointer;
+
+
+}
+
+.filter_input {
+    display: block;
+    border-radius: 2px;
+}
