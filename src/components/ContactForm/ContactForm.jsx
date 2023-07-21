@@ -5,7 +5,6 @@ import { nanoid } from 'nanoid';
 
 export class ContactForm extends Component {
   state = {
-    contacts: [],
     name: '',
     number: '',
   };

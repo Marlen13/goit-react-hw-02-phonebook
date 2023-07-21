@@ -15,7 +15,6 @@ export class App extends Component {
     filter: "",
   };
   formSubmitHandler = data => {
-    console.log(data.name);
     
     const searchSameContact = this.state.contacts.map((contact) => {
       return contact.name
@@ -30,7 +29,6 @@ export class App extends Component {
         contacts: [...prevState.contacts, contact]
         
       }));
-      console.log(this.state)
     }
   }
   changeFilter = (e) => {
@@ -54,9 +52,8 @@ export class App extends Component {
 
   render() {
     const { filter } = this.state;
-    // const normalizeFilter = this.state.filter.toLowerCase();
     const visibleContact = this.getVisibleContact()
-      // this.state.contacts.filter(contact => contact.name.toLowerCase().includes(normalizeFilter));
+   
     return (
       <>
         <h1>Phonebook</h1>
